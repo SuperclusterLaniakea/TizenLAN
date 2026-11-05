@@ -1,0 +1,11 @@
+{
+  "listenHost": "0.0.0.0",
+  "listenPort": 8099,
+  "sessionTtlMinutes": 30,
+  "maxSessions": 16,
+  "loginAttemptsPerMinute": 20,
+  "serveApp": true,
+  "adminAllowLan": false,
+  "logFile": "logs/host.log",
+  "forwards": []
+}

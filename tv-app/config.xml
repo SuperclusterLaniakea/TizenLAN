@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="http://tizenlan.local/MediaBrowser"
+        version="1.2.0"
+        viewmodes="maximized">
+
+    <tizen:application id="TizenLANTV.MediaBrowser" package="TizenLANTV" required_version="2.3"/>
+
+    <content src="index.html"/>
+    <icon src="icon.png"/>
+    <name>局域网媒体</name>
+    <description>浏览局域网 SMB/FTP 共享，并用电视解码播放视频</description>
+
+    <access origin="*" subdomains="true"/>
+
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+
+    <tizen:profile name="tv"/>
+
+    <tizen:setting screen-orientation="landscape"
+                   context-menu="disable"
+                   background-support="disable"
+                   encryption="disable"
+                   install-location="auto"
+                   hwkey-event="enable"/>
+
+    <tizen:metadata key="http://samsung.com/tv/metadata/use.toolbar" value="false"/>
+</widget>

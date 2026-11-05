@@ -1,0 +1,12 @@
+{"time":"2026-10-31T11:14:38.195Z","level":"info","message":"host started","meta":{"version":"1.1.0","host":"0.0.0.0","port":8099,"appRoot":"C:\\Users\\spark\\AppData\\Local\\TizenLANHost\\runtime\\tv-app","forwards":0,"audio":true}}
+{"time":"2026-10-31T11:14:46.773Z","level":"info","message":"audio capture started","meta":{"mode":"wasapi","device":"系统声音（默认输出设备）","bitrateKbps":128,"sampleRate":44100,"channels":2,"ffmpeg":"C:\\Users\\spark\\AppData\\Local\\TizenLANHost\\runtime\\bin\\ffmpeg.exe","helper":"C:\\Users\\spark\\AppData\\Local\\TizenLANHost\\runtime\\bin\\wasapi-loopback.exe"}}
+{"time":"2026-10-31T11:14:46.773Z","level":"info","message":"audio capture process ready","meta":{"pid":7888}}
+{"time":"2026-10-31T11:14:47.344Z","level":"info","message":"audio client connected","meta":{"clients":1}}
+{"time":"2026-10-31T11:14:52.889Z","level":"info","message":"audio client connected","meta":{"clients":1}}
+{"time":"2026-10-31T11:15:13.905Z","level":"info","message":"audio capture idle stop","meta":{}}
+{"time":"2026-10-31T11:15:13.906Z","level":"info","message":"audio capture stopping","meta":{}}
+{"time":"2026-10-31T12:05:00.238Z","level":"info","message":"host started","meta":{"version":"1.1.0","host":"0.0.0.0","port":8099,"appRoot":"C:\\Users\\spark\\AppData\\Local\\TizenLANHost\\runtime\\tv-app","forwards":0,"audio":true}}
+{"time":"2026-10-31T12:05:03.001Z","level":"warn","message":"client error","meta":{"detail":"read ECONNRESET"}}
+{"time":"2026-10-31T12:05:08.404Z","level":"info","message":"session created","meta":{"sid":"261fe12a","protocol":"smb","host":"192.168.3.99","port":445,"share":"f","path":"","entries":83,"ip":"127.0.0.1"}}
+{"time":"2026-10-31T12:05:08.422Z","level":"info","message":"session closed","meta":{"sid":"261fe12a","protocol":"smb","host":"192.168.3.99"}}
+{"time":"2026-10-31T12:05:08.429Z","level":"warn","message":"client error","meta":{"detail":"read ECONNRESET"}}

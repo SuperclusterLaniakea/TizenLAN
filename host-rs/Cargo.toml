@@ -1,0 +1,40 @@
+[package]
+name = "tizenlan-host"
+version = "2.0.0"
+edition = "2021"
+rust-version = "1.89"
+license = "MIT"
+description = "Native Rust SMB/FTP media host, computer audio stream and port forwarding for TizenLAN"
+
+[[bin]]
+name = "tizenlan-host"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+audio2mp3-core = "0.2"
+axum = { version = "0.8", features = ["http1", "json", "query", "tokio"] }
+bytes = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+encoding_rs = "0.8"
+futures-util = "0.3"
+httpdate = "1"
+local-ip-address = "0.6"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+smb = "0.12"
+suppaftp = { version = "12.2", features = ["tokio-rustls-ring"] }
+thiserror = "2"
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["io"] }
+
+[target.'cfg(windows)'.dependencies]
+wasapi = "0.26"
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_Console"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
